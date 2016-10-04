@@ -12,11 +12,19 @@ The code covers the use of number of AngularJS directives..see the code!
 The folder structure is as follows:
 
 -. (root)
+
 -`server.js` - this is the NodeJS server application with Express middleware
+
 -`package.json` - the dependecies for our Node app are decribed in this document - to install them, simply run `npm install`
+
 -`bower.json` - the dependencies for our front-end are described in here - and to install them, simply run `bower install`
+
 -`.bowerrrc` - this config file tells bower where to install dependecies (we specify our `/public/libs')`
+
 -`/public` - this is the root directory that contains the front-end code (html pages, templates, etc)
+
 -`./public/views` - this is where we put our templates (ItemLists.html and ItemDetails.html)
+
 -`/publib/libs/` - this is where bower loads all our dependencies. See here about [bower - packange manager for the Web](https://bower.io/)
+
   
