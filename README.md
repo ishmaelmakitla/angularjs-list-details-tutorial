@@ -10,6 +10,7 @@ The code covers the use of number of AngularJS directives..see the code!
 
 ### Project Folder Structure (personal preference)
 The folder structure is as follows:
+
 -. (root)
 -`server.js` - this is the NodeJS server application with Express middleware
 -`package.json` - the dependecies for our Node app are decribed in this document - to install them, simply run `npm install`
