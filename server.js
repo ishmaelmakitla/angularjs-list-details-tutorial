@@ -34,7 +34,7 @@
     return;
   };
 
-    //Route to get Roles
+    //Route to get Items
     app.get('/api/ishlema/items', function (req, res){
       //here you could do great things indeed - but not now...
       console.log("Tutorial-Server: Get-Items -- There are ", dummyItems.length ," Items");
