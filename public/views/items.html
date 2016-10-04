@@ -1,0 +1,16 @@
+
+<div id="items-list">
+  <!-- Label for the Datatable-->
+  <p>{{ message }}</p>
+  <!-- itemsTable is binding the table to the $scope.itemsTable variable in our controller in ItemsListController.js-->
+    <table ng-table="itemsTable" class="table table-striped" show-filter="true">
+      <tr ng-repeat="item in $data">
+          <td data-title="'Name'" filter="{name:'text'}" sortable="'name'">{{item.name}}</td>
+          <td title="'Item Code'">{{item.itemCode}}</td>
+          <td title="'Description'">{{item.description}}</td>
+          <!-- The last Column has control-actions to view selected item.. -->
+          <td title="" ng-click="selectItem(item)"><i class="fa fa-pencil-square-o"></i></td>
+      </tr>
+    </table>
+
+</div>

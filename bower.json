@@ -1,0 +1,15 @@
+{
+  "name": "list-details-tutorial-web",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "latest",
+    "font-awesome": "latest",
+    "animate.css": "latest",
+    "angular": "latest",
+    "angular-route": "latest",
+    "angular-bootstrap": "latest",
+    "angular-datatables": "latest",
+    "angular-material": "^1.1.1",
+    "ng-table": "^1.0.0"
+  }
+}

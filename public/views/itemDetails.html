@@ -1,0 +1,17 @@
+<div id="user-details">
+  <div class="form-group">
+    <label for="name" class="text-left">Item Name</label>
+    <input type="text" class="form-control text-left" id ="name" ng-model="item.name" ng-readonly="true">
+    <label for="itemcode">Item Code</label>
+    <input type="text" class="form-control text-left" id ="itemcode" ng-model="item.itemCode" ng-readonly="true">
+    <label for="itemdescription">Item Description</label>
+    <input type="text" class="form-control text-left" id ="itemdescription" ng-model="item.description" ng-readonly="true">
+    <label for="info">More Information</label>
+    <input type="textarea" class="form-control text-left" id ="info" ng-model="item.information" ng-readonly="true">
+    <!-- Button for changing account status -->
+    </br>
+    <!-- This is not necessary  -but I have it here for fun - when clicked, it takes us to the list-->
+    <button type="submit" class="btn btn-primary" ng-click="returnToList()"> OK, Back To List </button>
+  </div>
+
+</div>

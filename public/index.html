@@ -1,0 +1,67 @@
+<!doctype html>
+<!-- Here we assign our Angular-App module -->
+<html ng-app="mainListDetailsApp">
+<head>
+  <!-- META -->
+    <meta charset="utf-8">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+    <title>Moithuti - Driving School Management System</title>
+
+    <!-- SCROLLS -->
+    <!-- load bootstrap -->
+    <!--link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"-->
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+		<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
+
+    <!-- SPELLS -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css"> <!-- own custom styles -->
+
+    <!-- JS -->
+    <script src="libs/angular/angular.js"></script>
+    <script src="libs/angular-route/angular-route.js"></script>
+    <script src="libs/angular-bootstrap/ui-bootstrap.js"></script>
+
+    <!-- adding reference to ng-table -->
+    <link rel="stylesheet" href="libs/ng-table/dist/ng-table.min.css">
+    <script src="libs/ng-table/dist/ng-table.js"></script>
+    <script src="libs/ngInfiniteScroll/build/ng-infinite-scroll.min.js"></script>
+
+    <!-- Our angular controllers code -->
+    <script src="js/controllers/MainController.js"></script>
+    <script src="js/controllers/ItemsListController.js"></script>
+    <script src="js/controllers/ItemDetailsController.js"></script>
+    <!-- App Routes-->
+    <script src="js/appRoutes.js"></script>
+
+    <!-- load our services -->
+    <script src="js/services/ItemsService.js"></script>
+    <!-- load our main application which injects all the components we need-->
+    <script src="js/core.js"></script>
+
+</head>
+
+  <body style="padding: 5px">
+
+  <header>
+            <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Ishmael Makitla: Items-List-Details Tutorial</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/items"><!--i class="fa fa-users"></i--> My-Items</a></li>
+                    <li><a href="http://ishlema.co.za"><!--i class="fa fa-users"></i--> Tutorial Blog</a></li>
+                </ul>
+            </div>
+            </nav>
+  </header>
+  <!-- Place Holder for Dynamic Content - this is where we put templates-->
+    <div ng-view></div>
+</body>
+
+</html>
