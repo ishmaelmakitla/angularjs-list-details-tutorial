@@ -2,11 +2,17 @@
 Tutorial code that demonstrates one of the most common use cases in Web Applications; list of items and a "details screen" for a selected item. 
 ### AngularJS Directives (ng-x)
 The code covers the use of number of AngularJS directives..see the code!
+
   **ng-app** - directive that initializes an AngularJS application
+  
   **ng-model** - directive that binds the value of HTML controls to application data (which you access as `$scope.something`).
+  
   **ng-table** - directive that represents a [Data]table
+  
   **ng-repeat** - directive that repeats an HTML element
+  
   **ng-click** - directive that invokes the specified method in "methodX()" only if the button is clicked - `$scope.methodX`
+  
 
 ### Project Folder Structure (personal preference)
 The folder structure is as follows:
