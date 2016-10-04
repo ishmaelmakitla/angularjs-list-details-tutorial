@@ -29,7 +29,9 @@ The folder structure is as follows:
 
 
  ### So What Are Doing Here?
+ 
   We are displaying a list of items and when the user clicks on one of the items (icon on last column) - we open up a view of the details of the selected item. This is a very common use case and in this tutorial I am using Datatables - this provides filtering, sorting, paging -- all out of the box. This is exactly what you need when you are looking at large lists of items in your application.
   
  ### Cool, where do I sign-up?
+ 
  Well, you can clone the repository and play with the code, including customizing it for your own purpose. You can also fork the repo...whatever you choose, happy coding! 
