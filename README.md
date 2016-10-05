@@ -1,5 +1,19 @@
 # angularjs-list-details-tutorial
 Tutorial code that demonstrates one of the most common use cases in Web Applications; list of items and a "details screen" for a selected item. 
+
+### Getting Started - Installation Guide
+So getting the application up and running should take few steps - exactly the following steps should get you dancing:
+`git clone https://github.com/ishmaelmakitla/angularjs-list-details-tutorial.git`
+`cd angularjs-list-details-tutorial`
+`npm install` - this installs the NodeJS application's dependecies (server-side)
+`npm install bower -g` (in case you do not have bower already installed)
+`bower install` - this will install all client-side dependencies
+Finally, you can run the node server application:
+`node server.js`
+Then, to try the application out browse to `http://localhost:8080`.
+
+## Regarding the Source Code
+I tried and put as many comments in the code itself as possible - here I am just explaining the project setup. You should really explore the code!
 ### AngularJS Directives (ng-x)
 The code covers the use of number of AngularJS directives..see the code!
 
