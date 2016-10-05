@@ -2,7 +2,7 @@
 Tutorial code that demonstrates one of the most common use cases in Web Applications; list of items and a "details screen" for a selected item. 
 
 ### Getting Started - Installation Guide
-So getting the application up and running should take few steps - exactly the following steps should get you dancing:
+So getting the application up and running should take few steps - exactly the following steps should get you dancing:<br>
 `git clone https://github.com/ishmaelmakitla/angularjs-list-details-tutorial.git`<br>
 `cd angularjs-list-details-tutorial`<br>
 `npm install` - this installs the NodeJS application's dependecies (server-side)<br>
