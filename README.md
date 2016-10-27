@@ -39,7 +39,7 @@ The folder structure is as follows:
 
 -`bower.json` - the dependencies for our front-end are described in here - and to install them, simply run `bower install`
 
--`.bowerrrc` - this config file tells bower where to install dependecies (we specify our `/public/libs')`
+-`.bowerrc` - this config file tells bower where to install dependecies (we specify our `/public/libs')`
 
 -`/public` - this is the root directory that contains the front-end code (html pages, templates, etc)
 
