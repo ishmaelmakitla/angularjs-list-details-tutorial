@@ -1,5 +1,19 @@
 # angularjs-list-details-tutorial
 Tutorial code that demonstrates one of the most common use cases in Web Applications; list of items and a "details screen" for a selected item. 
+
+### Getting Started - Installation Guide
+So getting the application up and running should take few steps - exactly the following steps should get you dancing:<br>
+`git clone https://github.com/ishmaelmakitla/angularjs-list-details-tutorial.git`<br>
+`cd angularjs-list-details-tutorial`<br>
+`npm install` - this installs the NodeJS application's dependecies (server-side)<br>
+`npm install bower -g` (in case you do not have bower already installed)<br>
+`bower install` - this will install all client-side dependencies<br>
+Finally, you can run the node server application:<br>
+`node server.js`<br>
+Then, to try the application out browse to `http://localhost:8080`.<br>
+
+## Regarding the Source Code
+I tried and put as many comments in the code itself as possible - here I am just explaining the project setup. You should really explore the code!
 ### AngularJS Directives (ng-x)
 The code covers the use of number of AngularJS directives..see the code!
 
@@ -25,7 +39,7 @@ The folder structure is as follows:
 
 -`bower.json` - the dependencies for our front-end are described in here - and to install them, simply run `bower install`
 
--`.bowerrrc` - this config file tells bower where to install dependecies (we specify our `/public/libs')`
+-`.bowerrc` - this config file tells bower where to install dependecies (we specify our `/public/libs')`
 
 -`/public` - this is the root directory that contains the front-end code (html pages, templates, etc)
 
