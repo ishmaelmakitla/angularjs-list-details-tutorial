@@ -3,7 +3,7 @@
     <label for="name" class="text-left">Item Name</label>
     <input type="text" class="form-control text-left" id ="name" ng-model="item.name" ng-readonly="true">
     <label for="itemcode">Item Code</label>
-    <input type="text" class="form-control text-left" id ="itemcode" ng-model="item.itemCode" ng-readonly="true">
+    <input type="{{itemType}}" class="form-control text-left" id ="itemcode" ng-model="item.itemCode" ng-readonly="true">
     <label for="itemdescription">Item Description</label>
     <input type="text" class="form-control text-left" id ="itemdescription" ng-model="item.description" ng-readonly="true">
     <label for="info">More Information</label>
@@ -12,6 +12,7 @@
     </br>
     <!-- This is not necessary  -but I have it here for fun - when clicked, it takes us to the list-->
     <button type="submit" class="btn btn-primary" ng-click="returnToList()"> OK, Back To List </button>
+    <button type="submit" class="btn btn-warning" ng-click="toggleType()"> Toggle Item-Code Type </button>
   </div>
 
 </div>

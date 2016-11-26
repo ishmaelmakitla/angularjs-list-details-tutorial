@@ -3,9 +3,14 @@
   
   <!-- Label for the Datatable-->
   <p>{{ message }}</p>
+   <!-- Put the Add Button here -->
+   <button type="button" class="btn btn-sm btn-success" ng-click="addItemToServer()">
+        <i class="fa fa-plus"></i> Add New Item
+  </button>
+
   <!-- itemsTable is binding the table to the $scope.itemsTable variable in our controller in ItemsListController.js-->
     <table ng-table="itemsTable" class="table table-striped" show-filter="true">
-      <tr ng-repeat="item in $data">
+      <tr ng-repeat="item in $data" ng-click="selectItem(item)">
           <td data-title="'Name'" filter="{name:'text'}" sortable="'name'">{{item.name}}</td>
           <td title="'Item Code'">{{item.itemCode}}</td>
           <td title="'Description'">{{item.description}}</td>

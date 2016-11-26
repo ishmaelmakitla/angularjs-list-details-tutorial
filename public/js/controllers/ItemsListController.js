@@ -1,6 +1,8 @@
 angular.module('ItemsListCtrl', [])
   .controller('ItemsListController', ['$scope', '$location','ItemsService','NgTableParams', function($scope,$location, ItemsService, NgTableParams) {
 
+	//$scope.items = [];
+
        ItemsService.getAll().success(function(itemsList) {
          console.log("Items-List-Controller:: Returning All-Items From ItemsService. 0th Item ::", itemsList[0]);
           $scope.message = "List of Items On Our System :: "+(itemsList? itemsList.length : 0);
@@ -23,4 +25,32 @@ angular.module('ItemsListCtrl', [])
         //switch to item-view page (which will then use the ItemsService to get the selected item)
         $location.path("/view-item");
       };
+
+      //Here we add an item
+      $scope.addItem = function (){
+	var dummyExtraItem = {'name':'Extra-Item',
+                      'description':'Extra-Instructor is very nice',
+                      'itemCode': 'Extra-IT-',
+                      'information':' Extra-This is information about the item your are looking at'};
+	console.log("About to add New Item:: ", dummyExtraItem);
+
+	$scope.items.push(dummyExtraItem);
+
+      };
+
+     $scope.addItemToServer = function (){
+	var dummyExtraItem = {'name':'Extra-Item',
+                      'description':'Extra-Instructor is very nice',
+                      'itemCode': 'Extra-IT-',
+                      'information':' Extra-This is information about the item your are looking at'};
+	console.log("About to add New Item:: ", dummyExtraItem);
+	ItemsService.addItemToServer(dummyExtraItem).success(function (result){
+	  //refresh list of items with new ones...
+          console.log("Results of Adding New Item:: ", result);
+          $scope.items = result;
+	});
+  
+      };
+
+     
 }]);

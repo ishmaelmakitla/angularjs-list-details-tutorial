@@ -31,6 +31,9 @@ angular.module('ItemsService', []).factory('ItemsService', ['$http', function($h
         },
         getSelectedItem: function (){
           return selectedItem;
+        },
+        addItemToServer : function (newItem){
+           return $http.post('/api/ishlema/items', newItem);
         }
     }
 

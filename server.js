@@ -24,7 +24,7 @@
     console.log("Generating 30 Dummy Items...");
     //Nothing important goes on here - we are just generating dummy items.
     //Take note, though, of the keys/attributes of each dummy item - we bind to these using ng-model in our form!
-    for(var x = 0; x <30; x++){
+    for(var x = 0; x <5; x++){
       dummyItems.push({'name':'Item'+x,
                       'description':'Instructor'+x+' is very nice',
                       'itemCode': 'IT-'+x,
@@ -38,6 +38,15 @@
     app.get('/api/ishlema/items', function (req, res){
       //here you could do great things indeed - but not now...
       console.log("Tutorial-Server: Get-Items -- There are ", dummyItems.length ," Items");
+      res.json(dummyItems);
+    });
+
+    app.post('/api/ishlema/items', function (req, res){
+      //here you could do great things indeed - but not now...
+      var newItem = req.body;
+          newItem.itemCode = newItem.itemCode + 'By Server';
+      console.log("Tutorial-Server: Got New Item ",newItem);
+      dummyItems.push(newItem);
       res.json(dummyItems);
     });
 
